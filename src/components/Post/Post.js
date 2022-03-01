@@ -7,7 +7,7 @@ function Post() {
     const [postList, setPostList] = useState([]);
 
     useEffect(() => {
-        fetch("/post")
+        fetch("/v1/post")
         .then(res => res.json())
         .then(
             (result) => {
